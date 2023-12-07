@@ -19,17 +19,12 @@
 int timer = 100;
 int lightVal;
 int num;
-int prize;
+int activity;
 
 /*
    Establishing the probabilities within the Arduino sketch
    Options: Jumping, stomping, hopping on 1 foot, dancing
 */
-
-int jump = 25;
-int stomp = 25;
-int hop = 25;
-int dance = 25;
 
 float X, Y, Z, totalAccel;
 
