@@ -70,12 +70,12 @@ void draw()
   if ( myPort.available() > 0) {  // If data is available,
     val = myPort.readStringUntil('\n'); 
     try {
-      prizeNum = Integer.valueOf(val.trim());
+      activityNum = Integer.valueOf(val.trim());
     }
     catch(Exception e) {
       ;
     }
-    println(prizeNum); // confirm receipt of prize num!
+    println(activityNum); // confirm receipt of prize num!
     prevTime = millis(); // note the time we received the num
     println("prevTime is");
     println(prevTime);
@@ -129,7 +129,7 @@ void draw()
   println(drawTime - prevTime);
 
   if (drawTime - prevTime > readingTime) {
-    prizeNum = 0;
+    activityNum = 0;
     y = 0;
   }
 }
